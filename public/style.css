@@ -1,0 +1,16 @@
+/**
+ * Fix user-agent
+ */
+
+* {
+  width: 100%
+}
+.brand-logo{
+  margin-left: 15px
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

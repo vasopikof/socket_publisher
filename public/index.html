@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data interaction prototype</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="materialize.min.css"  media="screen,projection">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><i class="large material-icons">all_inclusive</i></a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col s3">
+        
+        <div class="section">
+          <a class="waves-effect waves-light flow-text btn" id="btnSendAllData">datas->U1</a>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <a class="waves-effect waves-light flow-text btn" id="btnSendSomeData">datas->U2</a>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <a class="waves-effect waves-light flow-text btn" id="btnBroadcastData">datas->ALL</a>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <a class="waves-effect waves-light flow-text btn" id="btnPurposeUsers">data1->ALL</a>
+        </div>
+        
+      </div>
+      <div class="col s3">
+        <div class="data">
+          
+          <div class="section">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Data 1</span>
+                <i class="material-icons prefix">description</i>
+                <input id="data_forData1" type="text" class="validate">
+                <label for="data_forData1">content</label>
+              </div>
+              <div class="card-action">
+                <a href="#">Save</a>
+                <a href="#">Clear</a>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="section">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Data 2</span>
+                <i class="material-icons prefix">description</i>
+                <input id="data_forData2" type="text" class="validate">
+                <label for="data_forData2">content</label>
+              </div>
+              <div class="card-action">
+                <a href="#">Save</a>
+                <a href="#">Clear</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s6"> 
+        <div class="user">
+          
+          <div class="section" id="user1"> 
+            <div class="chip">
+              User 1
+            </div>
+            <table class="highlight">
+              <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Content</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                
+              </tbody>
+            </table>
+          </div>
+          <div class="divider"></div>
+          <div class="section" id="user2"> 
+            <div class="chip">
+              User 2
+            </div>
+            <table class="highlight">
+              <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Content</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+
+    </div> 
+  </div>
+  
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>      
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+  <script src="/materialize.min.js"></script>
+</body>
+</html>

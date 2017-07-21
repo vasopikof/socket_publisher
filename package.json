@@ -1,0 +1,18 @@
+{
+  "name": "info-push",
+  "version": "0.1.0",
+  "description": "A simple data interaction",
+  "main": "index.js",
+  "keywords": [
+    "socket.io"
+  ],
+  "dependencies": {
+    "express": "4.9.x",
+    "socket.io": "latest"
+  },
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Krid Jinklub",
+  "license": "MIT"
+}
